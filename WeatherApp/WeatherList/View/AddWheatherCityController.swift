@@ -6,13 +6,7 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
-
-protocol AddWeatherDelegate {
-    func addWeatherDidSave(cityName : String)
-}
 
 class AddWheatherCityViewController: UIViewController {
     
@@ -33,4 +27,8 @@ class AddWheatherCityViewController: UIViewController {
     @IBAction func clsButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+}
+
+protocol AddWeatherDelegate {
+    func addWeatherDidSave(cityName : String)
 }

@@ -14,12 +14,10 @@ class WeatherListInteractor: WeatherListInteractorInputProtocol {
     func retrieveWeatherList(cityName: String) {
         do {
             remoteDatamanager?.retrieveWeatherList(cityName: cityName)
-            
         } catch {
             print(error.localizedDescription)
         }
     }
-    
 }
 
 extension WeatherListInteractor: WeatherListRemoteDataManagerOutputProtocol {

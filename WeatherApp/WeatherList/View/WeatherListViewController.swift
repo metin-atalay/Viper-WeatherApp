@@ -21,7 +21,6 @@ class WeatherListViewController: UIViewController {
 }
 
 extension WeatherListViewController: WeatherListViewProtocol {
-    
     func showWeatherInfo(weathers: WeatherModel) {
         weatherList.append(weathers)
         self.tableView.reloadData()
@@ -47,7 +46,6 @@ extension WeatherListViewController: UITableViewDataSource, UITableViewDelegate 
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weatherList.count
     }
@@ -59,7 +57,6 @@ extension WeatherListViewController: UITableViewDataSource, UITableViewDelegate 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
 }
 
 extension WeatherListViewController: AddWeatherDelegate {
