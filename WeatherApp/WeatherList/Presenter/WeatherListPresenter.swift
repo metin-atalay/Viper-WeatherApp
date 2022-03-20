@@ -18,7 +18,6 @@ class WeatherListPresenter: WeatherListPresenterProtocol {
 }
 
 extension WeatherListPresenter: WeatherListInteractorOutputProtocol {
-    
     func didRetrieveWeather(_ cityInfo: WeatherModel) {
         view?.hideLoading()
         view?.showWeatherInfo(weathers: cityInfo)

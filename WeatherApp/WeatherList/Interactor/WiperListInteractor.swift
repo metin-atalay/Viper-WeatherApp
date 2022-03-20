@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class WeatherListInteractor: WeatherListInteractorInputProtocol {
     weak var presenter: WeatherListInteractorOutputProtocol?
     var remoteDatamanager: WeatherListRemoteDataManagerInputProtocol?

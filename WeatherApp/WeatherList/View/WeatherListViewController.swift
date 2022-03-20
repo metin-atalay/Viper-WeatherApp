@@ -18,7 +18,6 @@ class WeatherListViewController: UIViewController {
         super.viewDidLoad()
         presenter?.viewDidLoad(cityName: "istanbul") // Default City
     }
-    
 }
 
 extension WeatherListViewController: WeatherListViewProtocol {
@@ -27,24 +26,19 @@ extension WeatherListViewController: WeatherListViewProtocol {
         weatherList.append(weathers)
         self.tableView.reloadData()
     }
-    
     func showError() {
-        HUD.flash(.label("Internet not connected"), delay: 2.0)
+        HUD.flash(.label("An error occured"), delay: 2.0)
     }
-    
     func showLoading() {
         HUD.show(.progress)
     }
-    
     func hideLoading() {
         HUD.hide()
     }
 }
 
 extension WeatherListViewController: UITableViewDataSource, UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as! WheatherTableViewCell
         
         let wather = weatherList[indexPath.row]

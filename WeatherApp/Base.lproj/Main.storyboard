@@ -66,6 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WAv-OS-U3x">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jV0-OG-dnh">
+                            <color key="tintColor" red="0.69411764710000001" green="0.13725490200000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addCityAction:" destination="ZCQ-rJ-L0O" id="yl4-Nn-EJO"/>
                                 <segue destination="RR9-jg-xep" kind="presentation" identifier="AddWheatherCityViewController" id="ZkD-pb-UWm"/>
@@ -105,17 +106,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWT-IF-rWF">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWT-IF-rWF">
                                 <rect key="frame" x="60" y="80" width="295" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cy-Ir-gvu">
-                                <rect key="frame" x="148" y="164" width="135" height="31"/>
+                                <rect key="frame" x="148" y="164" width="135" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Save"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add City"/>
                                 <connections>
                                     <action selector="saveAction:" destination="RR9-jg-xep" eventType="touchUpInside" id="gOF-sV-Pb0"/>
                                 </connections>
@@ -137,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HT-Lv-5dU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952" y="-131"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="-131.25"/>
         </scene>
     </scenes>
     <resources>
